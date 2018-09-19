@@ -9,3 +9,4 @@ brancher:
 
 script:
   - "npm run cover"
+  
