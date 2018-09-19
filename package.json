@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/mocha.js",
-    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --reporter test/mocha.js"
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --reporter test/mocha.js",
+    "jest": "jest test/demo.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,22 @@
   },
   "homepage": "https://github.com/wangxinwei18/testing#readme",
   "dependencies": {
+    "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "codecov": "^3.1.0"
   },
   "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0"
+    "jest": "^23.6.0",
+    "mocha": "^5.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2"
   }
 }
