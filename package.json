@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha test/mocha.js",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --reporter test/mocha.js",
-    "jest": "jest test/demo.test.js --coverage"
+    "jest": "jest test/demo.test.js --coverage",
+    "webdriver": "mocha test/webdriver.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
   "dependencies": {
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
-    "codecov": "^3.1.0"
+    "codecov": "^3.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
   },
   "devDependencies": {
     "babel-jest": "^23.6.0",
